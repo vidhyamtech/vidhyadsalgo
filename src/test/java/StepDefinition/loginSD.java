@@ -1,6 +1,7 @@
 package StepDefinition;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.Given;
@@ -9,7 +10,7 @@ import io.cucumber.java.en.When;
 import pages.loginPage;
 
 public class loginSD {
-
+	
 	ChromeDriver driver =new ChromeDriver();
 	loginPage loginObj =new loginPage(driver);
 	
