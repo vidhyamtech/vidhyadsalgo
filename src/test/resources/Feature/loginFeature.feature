@@ -1,4 +1,4 @@
-@loginTagFeature
+
 Feature: Signin
 
   @logintag
