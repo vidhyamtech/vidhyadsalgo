@@ -1,18 +1,15 @@
 package Feature;
 
 
-import org.junit.runner.RunWith;
+import io.cucumber.testng.CucumberOptions;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 
-import io.cucumber.junit.CucumberOptions;
-
-import io.cucumber.junit.Cucumber;
-
-@RunWith(Cucumber.class)
-@CucumberOptions(tags="@logintag",features="src/test/resources/Feature",glue= {"StepDefinition"},monochrome =true
-//plugin={"pretty","html:target/htmlReports/report.html"},
-		)
-public class RunnerTest {
+@CucumberOptions(tags="",features="src/test/resources/Feature",
+glue= {"StepDefinition"},monochrome =true,
+plugin={"pretty","html:target/htmlReports/report.html"})
+		
+public class RunnerTest extends AbstractTestNGCucumberTests{
 	
 	
 
