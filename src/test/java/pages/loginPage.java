@@ -12,9 +12,11 @@ public class loginPage {
 	
 	public void enterLogin(String username,String password)
 	{
+		System.out.println(username + "  1----" + password);
 		driver.findElement(txt_UserName).sendKeys(username);
 		driver.findElement(txt_Password).sendKeys(password);
 		driver.findElement(btn_login).click();
+		System.out.println(username + "  2----" + password);
 	}
 	
 	public loginPage(WebDriver driver)
